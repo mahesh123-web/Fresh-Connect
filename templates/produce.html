@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Active Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/static/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Active
+  * Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="/static/img/logo.jpg" alt="logo">
+        <h1 class="sitename">Fresh Connect</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url "home" %}">Home</a></li>
+          <li><a href="{% url "produce" %}" class="active">Produce</a></li>
+          <li><a href="team.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    {% comment %} <div class="page-title light-background">
+      <div class="container">
+        <h1>About</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title --> {% endcomment %}
+
+    <!---->
+
+    <div id="header"></div>
+
+<div class="container mt-4">
+    <h2 class="text-center">Explore Our Fresh Produce</h2>
+    <p class="lead text-center">We bring farm-fresh vegetables and fruits directly to your table.</p>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url "leafygreens"%}">🥬 Leafy Greens</a></h5>
+                    <p class="card-text">Our leafy greens are packed with nutrients and are perfect for healthy salads, smoothies, and more!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{%url "seasonalfruits"%}">🍎 Seasonal Fruits</a></h5>
+                    <p class="card-text">Enjoy a variety of fresh, seasonal fruits, handpicked from local farms. Sweet, juicy, and full of flavor!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{%url "rootvegetables"%}">🥕 Root Vegetables</a></h5>
+                    <p class="card-text">Packed with vitamins and minerals, our root vegetables are a healthy addition to any meal.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url "dairyproduct"%}">🥛 Dairy Products</h5></a>
+                    <p class="card-text">Fresh dairy products straight from the farm—milk, butter, and more to enrich your daily meals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer start-->
+
+<footer class="footer py-4 mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-6">
+              <h5>About Us</h5>
+              <p>We connect local farmers with city residents, delivering fresh and seasonal produce directly to your home.</p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-6 text-center">
+              <h5>Contact Us</h5>
+              <p>Email: support@localfoodnetwork.com</p>
+              <p>Phone: +91 98765 43210</p>
+              <p>Address: Pune, Maharashtra, India</p>
+              <div>
+                  <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-2">
+          <p class="mb-0">&copy; 2025 Local Food Delivery Network. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+<!--footer end-->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/php-email-form/validate.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

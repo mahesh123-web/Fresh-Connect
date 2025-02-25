@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Active Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/static/css/main.css" rel="stylesheet">
+</head>
+
+<body class="services-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="/static/img/logo.jpg" alt=""> 
+          <h1 class="sitename">Fresh Connect</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{% url "home"%}">Home</a></li>
+            <li><a href="{%url "produce"%}">Produce</a></li>
+            <li><a href="team.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+      </div>
+    </header>
+  
+    <main class="main">
+  
+      {% comment %} <!-- Page Title -->
+      <div class="page-title light-background">
+        <div class="container">
+          <h1>Services</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Services</li>
+            </ol>
+          </nav>
+        </div>
+      </div><!-- End Page Title --> {% endcomment %}
+
+      <div class="container">
+        <h2 class="text-center mb-4">Dairy Products</h2>
+        <div class="row">
+            <div class="col-md-4 my-3">
+                <div class="card p-3">
+                    <img src="/static/img/milk.jpg" class="card-img-top" alt="Carrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Milk</h5>
+                        <p class="card-text">Fresh organic carrots rich in vitamins.</p>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card p-3">
+                    <img src="/static/img/cheese.jpg" class="card-img-top" alt="Tomatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese</h5>
+                        <p class="card-text">Juicy red tomatoes directly from the farm.</p>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card p-3">
+                    <img src="/static/img/yoghurt.jpg" class="card-img-top" alt="Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoghurt</h5>
+                        <p class="card-text">Green and healthy spinach leaves.</p>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+              <div class="card p-3">
+                  <img src="/static/img/butter.jpg" class="card-img-top" alt="Cabbage">
+                  <div class="card-body">
+                      <h5 class="card-title">Butter</h5>
+                      <p class="card-text">Fresh and crispy green cabbage.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 my-3">
+              <div class="card p-3">
+                  <img src="/static/img/ghee.jpg" class="card-img-top" alt="Broccoli">
+                  <div class="card-body">
+                      <h5 class="card-title">Ghee</h5>
+                      <p class="card-text">Rich in fiber and vitamins.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 my-3">
+              <div class="card p-3">
+                  <img src="/static/img/cottage.jpg" class="card-img-top" alt="Potato">
+                  <div class="card-body">
+                      <h5 class="card-title">Cottage Cheese</h5>
+                      <p class="card-text">High-quality farm-grown potatoes.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 my-3">
+              <div class="card p-3">
+                  <img src="/static/img/cream.jpg" class="card-img-top" alt="Onion">
+                  <div class="card-body">
+                      <h5 class="card-title">Cream</h5>
+                      <p class="card-text">Fresh and aromatic onions.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 my-3">
+              <div class="card p-3">
+                  <img src="/static/img/buttermilk.jpg" class="card-img-top" alt="Bell Pepper">
+                  <div class="card-body">
+                      <h5 class="card-title">Butter Milk</h5>
+                      <p class="card-text">Crispy and colorful bell peppers.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div>
+          {% comment %} <div class="col-md-4">
+              <div class="card p-3">
+                  <img src="/static/img/p.jpg" class="card-img-top" alt="Cucumber">
+                  <div class="card-body">
+                      <h5 class="card-title">Potato</h5>
+                      <p class="card-text">Cool and refreshing cucumbers.</p>
+                      <button class="btn btn-success">Order Now</button>
+                  </div>
+              </div>
+          </div> {% endcomment %}
+        </div>
+    </div>
+
+
+
+
+    <!--footer start-->
+
+<footer class="footer py-4 mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- About Section -->
+          <div class="col-md-6">
+              <h5>About Us</h5>
+              <p>We connect local farmers with city residents, delivering fresh and seasonal produce directly to your home.</p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-6 text-center">
+              <h5>Contact Us</h5>
+              <p>Email: support@localfoodnetwork.com</p>
+              <p>Phone: +91 98765 43210</p>
+              <p>Address: Pune, Maharashtra, India</p>
+              <div>
+                  <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-2">
+          <p class="mb-0">&copy; 2025 Local Food Delivery Network. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
+<!--footer end-->
+
+    
+    
+      <!-- Scroll Top -->
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+      <!-- Preloader -->
+      <div id="preloader"></div>
+    
+      <!-- Vendor JS Files -->
+      <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="static/vendor/php-email-form/validate.js"></script>
+      <script src="static/vendor/aos/aos.js"></script>
+      <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="static/js/main.js"></script>
+    
+    </body>
+    
+    </html>
